@@ -1,0 +1,23 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "singleQuote": true,
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "useTabs": false,
+  "parser": "typescript",
+  "filepath": "src/main/webapp/src/**/*{.ts,.tsx,.js,.jsx,.scss}",
+  "jsxSingleQuote": true,
+  "bracketSameLine": false,
+  "printWidth": 100,
+  "quoteProps": "consistent",
+  "overrides": [
+    {
+      "files": ["*.scss"],
+      "options": {
+        "parser": "scss",
+        "tabWidth": 2
+      }
+    }
+  ]
+}
