@@ -1,8 +1,8 @@
 .my-button{
-    padding: 10px 5px;
+    padding: 10px 50px;
     color: black;
     border:9px;
-    background: red;
+    background: green;
 }
 .big{
     font-size: 30px;
