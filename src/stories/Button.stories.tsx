@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SearchOutlined } from '@ant-design/icons';
+import 'antd/dist/antd.css';
 
 import { CustomButton } from './../index';
 

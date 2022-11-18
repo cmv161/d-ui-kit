@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import './CustomButton.css'
+// import 'custom.css'
 import  Button  from 'antd/lib/button';
 
 export interface CustomButton {
