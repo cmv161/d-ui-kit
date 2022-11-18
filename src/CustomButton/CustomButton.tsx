@@ -1,27 +1,23 @@
 import React, {FC} from 'react';
 import './CustomButton.css'
-import { Button } from 'antd';
+import  Button  from 'antd/lib/button';
 
 export interface CustomButton {
     color : string;
     children: string;
-    big?: boolean;
+
 }
 
 
-const CustomButton : FC<CustomButton>= ({children, color, big,...props}) => {
+const CustomButton : FC<CustomButton>= ({children, color, ...props}) => {
     const rootClasses=['my-button']
-    if(big){
-        rootClasses.push('big')
-    }
+
     return (
-        // <button {...props} className={rootClasses.join(' ')} style={{color}}>
-        //     {children}
-        // </button>
-    //
-    <Button {...props} className={rootClasses.join(' ')} style={{color}}>
-        {children}
-    </Button>
+
+            <Button {...props} className={rootClasses.join(' ')} style={{color}}>
+                {children}
+            </Button>
+
     );
 };
 
