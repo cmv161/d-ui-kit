@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import  CustomButton  from './../CustomButton/CustomButton';
+import  CustomButton  from '../src/CustomButton/CustomButton';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

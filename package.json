@@ -1,11 +1,11 @@
 {
   "name": "d-ui-kit",
-  "version": "1.0.8",
+  "version": "1.0.17",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pub": "webpack && npm version patch && npm publish",
+    "pub": "build && npm version patch && npm publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "tsc --build tsconfig.json && babel src --extensions .ts,.tsx --out-dir lib --source-maps=true"
@@ -14,6 +14,12 @@
   "author": "cmv161",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
@@ -23,8 +29,10 @@
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "0.0.13",
     "@types/react": "^18.0.25",
-    "antd": "^4.24.2",
+    "@types/styled-components": "^5.1.26",
     "babel-loader": "^8.3.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "babel-preset-minify": "^0.5.1",
     "css-loader": "^6.7.2",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
@@ -32,15 +40,7 @@
     "style-loader": "^3.3.1",
     "ts-loader": "^9.4.1",
     "typescript": "^4.8.4",
-    "webpack": "^5.75.0",
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.5",
-    "@babel/plugin-transform-runtime": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
-    "@babel/preset-typescript": "^7.16.7",
-    "babel-plugin-css-modules-transform": "^1.6.2",
-    "babel-preset-minify": "^0.5.1"
+    "webpack": "^5.75.0"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -51,6 +51,6 @@
   ],
   "dependencies": {
     "antd": "^4.24.2",
-    "babel-plugin-transform-scss": "^1.1.0"
+    "styled-components": "^5.3.6"
   }
 }
