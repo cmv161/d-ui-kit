@@ -13,7 +13,9 @@
   "quoteProps": "consistent",
   "overrides": [
     {
-      "files": ["*.scss"],
+      "files": [
+        "*.scss"
+      ],
       "options": {
         "parser": "scss",
         "tabWidth": 2

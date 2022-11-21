@@ -1,9 +1,5 @@
 import 'antd/dist/antd.css';
 
-import CustomButton from "./CustomButton/CustomButton";
+import Button from './Button/Button';
 
-
-
-export{
-    CustomButton
-}
+export { Button };

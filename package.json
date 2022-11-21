@@ -1,6 +1,6 @@
 {
   "name": "d-ui-kit",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "pub": "build && npm version patch && npm publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "tsc --build tsconfig.json && babel src --extensions .ts,.tsx --out-dir lib --source-maps=true"
+    "build": "tsc --build tsconfig.json && babel src --extensions .ts,.tsx --out-dir lib --source-maps=true",
+    "pack": "yarn pack"
   },
   "keywords": [],
   "author": "cmv161",

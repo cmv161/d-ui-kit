@@ -2,44 +2,38 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SearchOutlined } from '@ant-design/icons';
 
+import { Button } from '../src';
 
-import { CustomButton } from '../src';
-
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/CustomButton',
-  component: CustomButton,
-  argTypes: {
-    type: {
-      options: ['primary', 'default', 'dashed', 'text', 'link'],
-      control: { type: 'inline-radio' },
+    title: 'Example/Button',
+    component: Button,
+    argTypes: {
+        type: {
+            control: { type: 'inline-radio' },
+        },
+        size: {
+            options: ['default', 'small', 'large'],
+            control: { type: 'inline-radio' },
+        },
+        shape: {
+            control: { type: 'inline-radio' },
+        },
+        icon: {
+            control: { type: 'check' },
+        },
     },
-    size: {
-      options: ['default', 'small', 'large'],
-      control: { type: 'inline-radio' },
-    },
-    danger: {
-      options: ['false', 'true'],
-      control: { type: 'boolean' },
-    },
-  },
-} as ComponentMeta<typeof CustomButton>;
+} as ComponentMeta<typeof Button>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof CustomButton> = (args) => <CustomButton {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const PrimaryDefaultSize = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-PrimaryDefaultSize.args = {
-  children: 'Button',
-  size: 'default',
+export const GeneralButton = Template.bind({});
+
+GeneralButton.args = {
+    children: 'Button',
 };
 
-
-export const Circle = Template.bind({});
-Circle.args = {
-  shape:"circle",
-  icon:<SearchOutlined />,
+export const ButtonWithIcon = Template.bind({});
+ButtonWithIcon.args = {
+    children: 'Button',
+    icon: <SearchOutlined />,
 };
-
-
