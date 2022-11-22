@@ -1,0 +1,12 @@
+Dynamika project
+
+npm run storybook - Запуск Story Book
+npm run build - Компиляция проекта в папку lib
+npm run pack - Создает сжатый gzip-архив проекта.
+npm run pub - Компиляция проекта, изменние версии "patch", публикация пакета в NPM
+
+Подключение ui-kit к другому проекту минуя репозиторий NPM
+-npm run build
+-npm run pack
+ В  файле package.json проекта к которому подключаем ui-kit необходимо добавить
+ "d-ui-kit": "file:D:\\testProjects\\d-ui-kit\\d-ui-kit-v1.0.18.tgz"
