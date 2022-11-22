@@ -1,8 +1,18 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SearchOutlined } from '@ant-design/icons';
+import {
+    Title,
+    Subtitle,
+    Description,
+    Primary,
+    ArgsTable,
+    Stories,
+    PRIMARY_STORY,
+} from '@storybook/addon-docs';
 
 import { Button } from '../src';
+import ButtonDoc from './doc/ButtonDoc';
 
 export default {
     title: 'Example/Button',
@@ -20,6 +30,21 @@ export default {
         },
         icon: {
             control: { type: 'check' },
+        },
+    },
+    parameters: {
+        docs: {
+            page: () => (
+                <>
+                    <Title />
+                    <ButtonDoc />
+                    <Subtitle />
+                    <Description />
+                    <Primary />
+                    <ArgsTable story={PRIMARY_STORY} />
+                    <Stories />
+                </>
+            ),
         },
     },
 } as ComponentMeta<typeof Button>;
