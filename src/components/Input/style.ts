@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from '../../Theme/theme';
+import { color } from '../../theme/theme';
 import NumberFormat from 'react-number-format';
 import { ExtraInputProps } from './Input';
 
@@ -41,6 +41,8 @@ const InputStyle = styled.input<ExtraInputProps>`
     color: ${color.gray12};
     outline: none;
     &:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
         border: 2px solid ${color.blue7};
     }
     &:hover:disabled {

@@ -32,7 +32,7 @@ type ExtraInputProps = React.HTMLAttributes<HTMLInputElement> & {
     decimalScale?: number;
     placeholder?: string;
     image?: string;
-    errorBorder?: boolean;
+    errorBorder?: boolean | string;
     errorText?: string;
     password?: boolean;
     readOnly?: boolean;

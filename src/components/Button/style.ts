@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from '../../Theme/theme';
+import { color } from '../../theme/theme';
 import { ButtonProps } from './Button';
 
 const buttonHeight = (size: string | undefined) => {

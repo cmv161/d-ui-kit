@@ -1,6 +1,6 @@
 {
   "name": "d-ui-kit",
-  "version": "1.0.18",
+  "version": "1.0.20",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
@@ -8,8 +8,9 @@
     "pub": "build && npm version patch && npm publish",
     "storybook": "start-storybook -p 6006 -s ./src",
     "build-storybook": "build-storybook",
-    "build": "tsc --build tsconfig.json && babel src --extensions .ts,.tsx --out-dir lib --source-maps=true",
-    "pack": "yarn pack"
+    "build": "tsc --build tsconfig.json && babel src --extensions .ts,.tsx --out-dir lib --source-maps=true && yarn copy-css",
+    "pack": "yarn pack",
+    "copy-css": "copyfiles --flat src/theme/*.css lib/theme"
   },
   "keywords": [],
   "author": "cmv161",
@@ -34,6 +35,7 @@
     "babel-loader": "^8.3.0",
     "babel-plugin-styled-components": "^2.0.7",
     "babel-preset-minify": "^0.5.1",
+    "copyfiles": "^2.4.1",
     "css-loader": "^6.7.2",
     "prettier": "^2.7.1",
     "react": "^18.2.0",

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from '../../Theme/theme';
+import { color } from '../../theme/theme';
 import { TextAreaProps } from './Textarea';
 
 const TextAreaWrapperDivStyle = styled.div<TextAreaProps>`
