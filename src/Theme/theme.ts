@@ -160,6 +160,7 @@ export const color = {
     NPGray8: '#55596A',
     NPGray9: '#424555',
     NPGray10: '#303240',
+    NPGray11: '#F5F5F5',
 
     brandColor1: '#00ACD8',
     brandColor2: '#005FA5',
