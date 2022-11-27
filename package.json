@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pub": "build && npm version patch && npm publish",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s ./src",
     "build-storybook": "build-storybook",
     "build": "tsc --build tsconfig.json && babel src --extensions .ts,.tsx --out-dir lib --source-maps=true",
     "pack": "yarn pack"
@@ -52,6 +52,8 @@
   ],
   "dependencies": {
     "antd": "^4.24.2",
+    "babel-plugin-inline-import-data-uri": "^1.0.1",
+    "react-number-format": "4.8.0",
     "styled-components": "^5.3.6"
   }
 }

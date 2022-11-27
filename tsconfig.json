@@ -23,5 +23,6 @@
   },
   "files": [
     "src/index.ts"
-  ]
+  ],
+  "include": ["src/components", "src/custom.d.ts"]
 }
