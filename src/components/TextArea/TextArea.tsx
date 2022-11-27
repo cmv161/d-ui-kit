@@ -13,15 +13,16 @@ export type TextAreaProps = React.HTMLAttributes<HTMLTextAreaElement> & {
     resize?: ResizeVariant;
     value?: string;
     onChange?: (value: string) => void;
+    onFocus?: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
 };
 
 const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
     (
-        { disabled, messageErrorText, value, placeholder, onChange, width, height, resize, style },
+        { disabled, messageErrorText, value, placeholder, onChange, width, height, resize, style, onFocus },
         ref
     ) => {
         const textAreaWrapperProps = { width, height, resize, style };
-        const textAreaProps = { placeholder, disabled, value, ref, onChange, style };
+        const textAreaProps = { placeholder, disabled, value, ref, onChange, style, onFocus };
 
         return (
             <TextAreaWrapperDivStyle {...textAreaWrapperProps}>

@@ -41,9 +41,10 @@ const InputStyle = styled.input<ExtraInputProps>`
     color: ${color.gray12};
     outline: none;
     &:focus {
-        -webkit-box-shadow: none;
-        box-shadow: none;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
         border: 2px solid ${color.blue7};
+        border-color: ${color.blue7} !important;
     }
     &:hover:disabled {
         border-color: ${color.gray5};
@@ -65,7 +66,10 @@ const NumberFormatStyle = styled(NumberFormat)`
     color: ${color.gray12};
     outline: none;
     &:focus {
-        border: 2px solid ${color.blue7};
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: 2px solid ${color.blue7} !important;
+        border-color: ${color.blue7} !important;
     }
     &:hover:disabled {
         border-color: ${color.gray5};

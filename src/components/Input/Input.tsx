@@ -14,9 +14,6 @@ import {
 } from './style';
 import closeCircle from './close-circle.svg';
 
-export type SizeVariant = 'large' | 'small' | 'middle';
-export type StatusVariant = 'error' | 'warning';
-
 const types = ['text', 'number', 'phone', 'money', 'percent', 'custom'] as const;
 
 type InputType = typeof types[number];
